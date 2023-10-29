@@ -7,18 +7,26 @@
   <link rel="stylesheet" href="/dist/output.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <p>sunnyside</p>
-      <div>
-        <button>About</button>
-        <button>Services</button>
-        <button>Projects</button>
-        <button>Contact</button>
+<body class="flex flex-col text-center">
+  <header class="relative bg-header bg-center bg-cover text-white px-5 py-5 w-full min-h-[30rem] md:bg-header-desktop">
+    <nav class="flex flex-row justify-between items-center h-[2.5rem]">
+      <img src="images/logo.svg" alt="sunnyside logo" class="h-[24px] w-[124px]">
+      <button type="button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden">
+        <img src="/images/icon-hamburger.svg" alt="" class="h-[18px] w-[24px]">
+      </button>
+      <div class="hidden absolute inset-[1rem] top-[6rem] lg:static lg:inline-flex" id="mobile-menu">
+        <ul class="flex flex-col py-6 gap-[0.5rem] bg-white text-grayish-blue lg:py-0 lg:text-white lg:bg-transparent lg:flex-row lg:gap-[2rem]
+                  before:content-[''] before:absolute before:border-solid before:border-[19px] before:top-[-19px] before:right-0
+                  before:border-white before:rotate-45 before:translate-x-3 before:overflow-hidden lg:before:content-none">
+          <li><button class="btn py-2 px-4 rounded-full">About</button></li>
+          <li><button class="btn py-2 px-4 rounded-full">Services</button></li>
+          <li><button class="btn py-2 px-4 rounded-full">Projects</button></li>
+          <li><button class="btn py-2 px-4 rounded-full bg-yellow lg:bg-white text-very-dark-desaturated-blue">Contact</button></li>
+        </ul>
       </div>
     </nav>
-    <h1>We are creatives</h1>
+    <h1 class="my-[3rem] pt-4 text-[2.25rem] leading-tight">WE ARE CREATIVES</h1>
+    <img src="images/icon-arrow-down.svg" alt="" class="mx-auto">
   </header>
   <main>
     <article>
@@ -90,5 +98,17 @@
     <p>Services</p>
     <p>Projects</p>
   </footer>
+  <script>
+    const menuButton = document.querySelector("button");
+    const menu = document.querySelector("#mobile-menu");
+    menuButton.addEventListener("click", () => {
+      menuButton.setAttribute(
+      'aria-expanded', 
+      `${!(menuButton.getAttribute('aria-expanded') === 'true')}`
+    );
+      menu.classList.toggle("hidden");
+      
+    })
+  </script>
 </body>
 </html>
