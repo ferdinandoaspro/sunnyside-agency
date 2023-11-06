@@ -36,6 +36,10 @@ export const theme = {
       "photography": "url('/images/desktop/image-photography.jpg')",
       "stand-out": "url('/images/desktop/image-stand-out.jpg')",
       "transform": "url('/images/desktop/image-transform.jpg')"
+    },
+    fontFamily: {
+      "barlow": ["Barlow", "sans-serif"],
+      "fraunces": ["Fraunces", "sans-serif"]
     }
   },
 };

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body class="flex flex-col text-center">
@@ -14,14 +17,14 @@
       <button type="button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden">
         <img src="/images/icon-hamburger.svg" alt="" class="h-[18px] w-[24px]">
       </button>
-      <div class="hidden absolute inset-[1rem] top-[6rem] lg:static lg:inline-flex" id="mobile-menu">
-        <ul class="flex flex-col py-6 gap-[0.5rem] bg-white text-grayish-blue lg:py-0 lg:text-white lg:bg-transparent lg:flex-row lg:gap-[2rem]
-                  before:content-[''] before:absolute before:border-solid before:border-[19px] before:top-[-19px] before:right-0
-                  before:border-white before:rotate-45 before:translate-x-3 before:overflow-hidden lg:before:content-none">
-          <li><button class="btn py-2 px-4 rounded-full">About</button></li>
-          <li><button class="btn py-2 px-4 rounded-full">Services</button></li>
-          <li><button class="btn py-2 px-4 rounded-full">Projects</button></li>
-          <li><button class="btn py-2 px-4 rounded-full bg-yellow lg:bg-white text-very-dark-desaturated-blue">Contact</button></li>
+      <div class="hidden absolute inset-5 top-[6rem] lg:static lg:inline-flex" id="mobile-menu">
+        <ul class="flex flex-col py-[1.75rem] gap-2 bg-white text-very-dark-grayish-blue lg:py-0 lg:text-white lg:bg-transparent lg:flex-row
+                  before:absolute before:border-solid before:border-[15px] before:border-t-transparent before:border-r-transparent 
+                  before:top-[-15px] before:right-[-15px] before:border-white before:rotate-45 lg:before:content-none">
+          <li><button class="px-6 py-3 font-bold rounded-full btn">About</button></li>
+          <li><button class="px-6 py-3 rounded-full btn">Services</button></li>
+          <li><button class="px-6 py-3 rounded-full btn">Projects</button></li>
+          <li><button class="px-6 py-3 rounded-full btn bg-yellow text-very-dark-desaturated-blue lg:bg-white">CONTACT</button></li>
         </ul>
       </div>
     </nav>
