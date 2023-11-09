@@ -39,7 +39,8 @@ export const theme = {
     },
     fontFamily: {
       "barlow": ["Barlow", "sans-serif"],
-      "fraunces": ["Fraunces", "sans-serif"]
+      "fraunces": ["Fraunces", "sans-serif"],
+      "poppins": ["Poppins", "sans-serif"]
     }
   },
 };

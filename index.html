@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Poppins:wght@900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="flex flex-col text-center">
-  <header class="relative bg-header bg-center bg-cover text-white px-5 py-5 w-full min-h-[30rem] md:bg-header-desktop">
-    <nav class="flex flex-row justify-between items-center h-[2.5rem]">
+<body class="flex flex-col text-center font-barlow">
+  <header class="w-full text-white bg-center bg-cover bg-no-repeat bg-header min-h-[30rem] h-fit max-h-[42rem] sm:bg-header-desktop">
+    <nav class="flex flex-row items-center justify-between h-10 px-5 mt-5">
       <img src="images/logo.svg" alt="sunnyside logo" class="h-[24px] w-[124px]">
       <button type="button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden">
         <img src="/images/icon-hamburger.svg" alt="" class="h-[18px] w-[24px]">
       </button>
-      <div class="hidden absolute inset-5 top-[6rem] lg:static lg:inline-flex" id="mobile-menu">
-        <ul class="flex flex-col py-[1.75rem] gap-2 bg-white text-very-dark-grayish-blue lg:py-0 lg:text-white lg:bg-transparent lg:flex-row
+      <div class="hidden inset-5 top-[6rem] z-10 lg:static lg:inline-flex origin-top-right" id="mobile-menu">
+        <ul class="flex flex-col py-7 gap-2 bg-white text-dark-grayish-blue lg:py-0 lg:text-white items-center lg:bg-transparent lg:flex-row
+        
                   before:absolute before:border-solid before:border-[15px] before:border-t-transparent before:border-r-transparent 
                   before:top-[-15px] before:right-[-15px] before:border-white before:rotate-45 lg:before:content-none">
           <li><button class="px-6 py-3 font-bold rounded-full btn">About</button></li>
           <li><button class="px-6 py-3 rounded-full btn">Services</button></li>
           <li><button class="px-6 py-3 rounded-full btn">Projects</button></li>
-          <li><button class="px-6 py-3 rounded-full btn bg-yellow text-very-dark-desaturated-blue lg:bg-white">CONTACT</button></li>
+          <li><button class="px-6 py-3 text-[0.85rem] rounded-full btn bg-yellow text-very-dark-desaturated-blue font-fraunces lg:bg-white">CONTACT</button></li>
         </ul>
       </div>
     </nav>
-    <h1 class="my-[3rem] pt-4 text-[2.25rem] leading-tight">WE ARE CREATIVES</h1>
-    <img src="images/icon-arrow-down.svg" alt="" class="mx-auto">
+    <h1 class="my-12 py-4 sm:py-6 md:py-8 text-4xl md:text-5xl font-fraunces font-black tracking-widest leading-tight max-[320px]:text-3xl">WE ARE CREATIVES</h1>
+    <img src="images/icon-arrow-down.svg" alt="" class="mx-auto mb-[40%] sm:mt-[6%]">
   </header>
   <main>
     <article>
@@ -96,10 +97,19 @@
       </div>
     </section>
   </main>
-  <footer>
-    <p>About</p>
-    <p>Services</p>
-    <p>Projects</p>
+  <footer class="py-6 relative h-[19rem] bg-dark-moderate-cyan bg-opacity-60 w-full text-dark-desaturated-cyan text-opacity-80">
+    <h6 class="my-5 text-3xl font-black font-poppins">sunnyside</h6>
+    <div class=" py-3 mb-10 flex flex-row justify-center max-[320px]:gap-4 gap-[2rem] md:gap-[4rem]">
+      <p>About</p>
+      <p>Services</p>
+      <p>Projects</p>
+    </div>
+    <div class="flex flex-row justify-center w-full gap-6 pt-7">
+      <img src="images/icon-facebook.svg" alt="facebook logo">
+      <img src="images/icon-instagram.svg" alt="instagram logo">
+      <img src="images/icon-twitter.svg" alt="twitter logo">
+      <img src="images/icon-pinterest.svg" alt="pinterest logo">
+    </div>
   </footer>
   <script>
     const menuButton = document.querySelector("button");
@@ -107,10 +117,10 @@
     menuButton.addEventListener("click", () => {
       menuButton.setAttribute(
       'aria-expanded', 
-      `${!(menuButton.getAttribute('aria-expanded') === 'true')}`
+      `${!(menuButton.getAttribute('aria-expanded') === "true")}`
     );
       menu.classList.toggle("hidden");
-      
+      menu.classList.toggle("absolute");
     })
   </script>
 </body>
