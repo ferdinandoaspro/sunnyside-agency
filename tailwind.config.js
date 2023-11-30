@@ -33,9 +33,9 @@ export const theme = {
       "sugar-cubes-desktop": "url('/images/desktop/image-gallery-sugar-cubes.jpg')",
       "graphic-design-desktop": "url('/images/desktop/image-graphic-design.jpg')",
       "header-desktop": "url('/images/desktop/image-header.jpg')",
-      "photography": "url('/images/desktop/image-photography.jpg')",
-      "stand-out": "url('/images/desktop/image-stand-out.jpg')",
-      "transform": "url('/images/desktop/image-transform.jpg')"
+      "photography-desktop": "url('/images/desktop/image-photography.jpg')",
+      "stand-out-desktop": "url('/images/desktop/image-stand-out.jpg')",
+      "transform-desktop": "url('/images/desktop/image-transform.jpg')"
     },
     fontFamily: {
       "barlow": ["Barlow", "sans-serif"],
