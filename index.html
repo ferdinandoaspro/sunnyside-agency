@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="flex flex-col text-center font-barlow 2xl:text-[1.075rem]">
+<body class="flex flex-col text-center font-barlow">
   <header class="w-full text-white bg-center bg-cover bg-no-repeat bg-header min-h-[32rem] max-h-[100vh] h-fit min-[450px]:bg-header-desktop">
     <nav class="flex flex-row items-center justify-between h-10 px-5 mt-5">
       <img src="images/logo.svg" alt="sunnyside logo" class="h-[24px] w-[124px]">
@@ -98,29 +98,52 @@
         </article>
       </div>
     </section>
-    <section>
-      <h3>Client testimonials</h3>
-      <div>
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
+    <section class="mb-6 py-14 md:py-24 lg:py-[8.5rem] lg:mb-0">
+      <h3 class="text-sm tracking-[0.25rem] mb-14 font-fraunces text-grayish-blue lg:text-lg lg:font-black lg:mb-16 lg:pb-2">CLIENT TESTIMONIALS</h3>
+      <div class="flex flex-col items-center px-3 gap-14 sm:flex-row sm:gap-6 sm:justify-center 2xl:gap-36">
+        <div class="max-w-[350px]">
+          <img src="images/image-emily.jpg" alt="Emily" class="h-16 mx-auto rounded-full">
+          <p class="my-7 leading-7 saturate-[.10] text-very-dark-grayish-blue sm:my-10 lg:my-14">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <p class="font-black text-very-dark-desaturated-blue font-fraunces">Emily R.</p>
+          <p class="mt-2 text-[13px] text-grayish-blue">Marketing Director</p>
+        </div>
+        <div class="max-w-[350px]">
+          <img src="images/image-thomas.jpg" alt="Thomas" class="h-16 mx-auto rounded-full">
+          <p class="my-7 leading-7 saturate-[.10] text-very-dark-grayish-blue sm:my-10 lg:my-14">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <p class="font-black text-very-dark-desaturated-blue font-fraunces">Thomas S.</p>
+          <p class="mt-2 text-[13px] text-grayish-blue">Chief Operating Officer</p>
+        </div>
+        <div class="max-w-[350px]">
+          <img src="images/image-jennie.jpg" alt="Jennie" class="h-16 mx-auto rounded-full">
+          <p class="my-7 leading-7 saturate-[.10] text-very-dark-grayish-blue sm:my-10 lg:my-14">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <p class="font-black text-very-dark-desaturated-blue font-fraunces">Jennie F.</p>
+          <p class="mt-2 text-[13px] text-grayish-blue">Business Owner</p>
+        </div>
       </div>
-      <div>
-        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-        <p>Thomas S.</p>
-        <p>Chief Operating Officer</p>
-      </div>
-      <div>
-        <p>
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        </p>
-        <p>
-          Jennie F.
-        </p>
-        <p>
-          Business Owner
-        </p>
-      </div>
+    </section>
+    <section class="grid grid-cols-2 grid-rows-2 sm:grid-rows-1 sm:grid-cols-4">
+      <picture>
+        <source srcset="images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 640px)">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+      </picture>
+      <picture>
+        <source srcset="images/desktop/image-gallery-orange.jpg" media="(min-width: 640px)">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="">
+      </picture>
+      <picture>
+        <source srcset="images/desktop/image-gallery-cone.jpg" media="(min-width: 640px)">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="">
+      </picture>
+      <picture>
+        <source srcset="images/desktop/image-gallery-sugarcubes.jpg" media="(min-width: 640px)">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      </picture>
     </section>
   </main>
   <footer class="py-6 relative h-[19rem] bg-dark-moderate-cyan bg-opacity-60 w-full text-dark-desaturated-cyan text-opacity-80">

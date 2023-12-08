@@ -589,12 +589,29 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-\[25\%\] {
   margin-bottom: 25%;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-5 {
@@ -615,6 +632,10 @@ html {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[18px\] {
@@ -662,12 +683,28 @@ html {
   max-width: 400px;
 }
 
-.max-w-\[410px\] {
-  max-width: 410px;
-}
-
 .max-w-\[405px\] {
   max-width: 405px;
+}
+
+.max-w-\[390px\] {
+  max-width: 390px;
+}
+
+.max-w-\[380px\] {
+  max-width: 380px;
+}
+
+.max-w-\[375px\] {
+  max-width: 375px;
+}
+
+.max-w-\[370px\] {
+  max-width: 370px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .grow {
@@ -680,6 +717,14 @@ html {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -700,6 +745,10 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-2 {
@@ -792,6 +841,11 @@ html {
   padding-bottom: 3rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -868,8 +922,17 @@ html {
   font-size: 1.75rem;
 }
 
+.text-\[13px\] {
+  font-size: 13px;
+}
+
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-black {
@@ -880,8 +943,16 @@ html {
   font-weight: 700;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .leading-tight {
   line-height: 1.25;
+}
+
+.tracking-\[0\.25rem\] {
+  letter-spacing: 0.25rem;
 }
 
 .tracking-widest {
@@ -903,9 +974,19 @@ html {
   color: hsl(232 10% 55% / var(--tw-text-opacity));
 }
 
+.text-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(210 4% 67% / var(--tw-text-opacity));
+}
+
 .text-very-dark-desaturated-blue {
   --tw-text-opacity: 1;
   color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+.text-very-dark-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(213 9% 39% / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -931,6 +1012,11 @@ html {
 
 .decoration-8 {
   text-decoration-thickness: 8px;
+}
+
+.saturate-\[\.10\] {
+  --tw-saturate: saturate(.10);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .before\:absolute::before {
@@ -1014,9 +1100,19 @@ html {
     grid-row-start: 1;
   }
 
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .sm\:mt-\[6\%\] {
@@ -1025,6 +1121,30 @@ html {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:px-6 {
@@ -1045,23 +1165,9 @@ html {
     .sm\:max-lg\:bottom-2 {
       bottom: 0.5rem;
     }
-
-    .sm\:max-lg\:px-0 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
   }
 
   @media not all and (min-width: 768px) {
-    .sm\:max-md\:grid-cols-\[52\%_48\%\] {
-      grid-template-columns: 52% 48%;
-    }
-
-    .sm\:max-md\:px-2 {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-
     .sm\:max-md\:px-1 {
       padding-left: 0.25rem;
       padding-right: 0.25rem;
@@ -1071,18 +1177,6 @@ html {
       padding-bottom: 0.5rem;
     }
 
-    .sm\:max-md\:text-\[15px\] {
-      font-size: 15px;
-    }
-
-    .sm\:max-md\:text-\[14\.5px\] {
-      font-size: 14.5px;
-    }
-
-    .sm\:max-md\:text-\[14\.8px\] {
-      font-size: 14.8px;
-    }
-
     .sm\:max-md\:text-\[14\.7px\] {
       font-size: 14.7px;
     }
@@ -1090,8 +1184,8 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:gap-\[4rem\] {
@@ -1113,6 +1207,16 @@ html {
     padding-bottom: 2rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1126,6 +1230,24 @@ html {
 
   .lg\:bottom-12 {
     bottom: 3rem;
+  }
+
+  .lg\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:inline-flex {
@@ -1164,8 +1286,36 @@ html {
     padding-bottom: 2.25rem;
   }
 
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .lg\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:py-\[8\.5rem\] {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+  }
+
   .lg\:pb-6 {
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:pb-2 {
+    padding-bottom: 0.5rem;
   }
 
   .lg\:text-4xl {
@@ -1177,8 +1327,18 @@ html {
     font-size: 1.125em;
   }
 
-  .lg\:text-\[1\.145em\] {
-    font-size: 1.145em;
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:font-black {
+    font-weight: 900;
   }
 
   .lg\:text-white {
@@ -1204,6 +1364,22 @@ html {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .\32xl\:gap-20 {
+    gap: 5rem;
+  }
+
+  .\32xl\:gap-24 {
+    gap: 6rem;
+  }
+
+  .\32xl\:gap-36 {
+    gap: 9rem;
+  }
+
   .\32xl\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
@@ -1215,39 +1391,5 @@ html {
 
   .\32xl\:text-\[2\.5rem\] {
     font-size: 2.5rem;
-  }
-
-  .\32xl\:text-\[1\.25em\] {
-    font-size: 1.25em;
-  }
-
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .\32xl\:text-\[1\.2em\] {
-    font-size: 1.2em;
-  }
-
-  .\32xl\:text-\[1\.175em\] {
-    font-size: 1.175em;
-  }
-
-  .\32xl\:text-\[1\.17em\] {
-    font-size: 1.17em;
-  }
-
-  .\32xl\:text-\[1\.15em\] {
-    font-size: 1.15em;
-  }
-
-  .\32xl\:text-\[1\.145em\] {
-    font-size: 1.145em;
   }
 }
