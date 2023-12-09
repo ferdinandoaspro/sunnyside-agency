@@ -41,8 +41,8 @@ export const theme = {
       "barlow": ["Barlow", "sans-serif"],
       "fraunces": ["Fraunces", "sans-serif"],
       "poppins": ["Poppins", "sans-serif"]
-    }
-  },
+    }, 
+  }
 };
 export const plugins = [
   plugin(function ({ addBase }) {

@@ -679,32 +679,12 @@ html {
   width: 100%;
 }
 
-.max-w-\[400px\] {
-  max-width: 400px;
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .max-w-\[405px\] {
   max-width: 405px;
-}
-
-.max-w-\[390px\] {
-  max-width: 390px;
-}
-
-.max-w-\[380px\] {
-  max-width: 380px;
-}
-
-.max-w-\[375px\] {
-  max-width: 375px;
-}
-
-.max-w-\[370px\] {
-  max-width: 370px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .grow {
@@ -816,6 +796,15 @@ html {
      object-fit: fill;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -834,6 +823,11 @@ html {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-12 {
@@ -1066,12 +1060,25 @@ html {
   border-top-color: transparent;
 }
 
+.hover\:fill-white:hover {
+  fill: hsl(0, 0%, 100%);
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
 .hover\:decoration-soft-red\/100:hover {
   text-decoration-color: hsl(7 99% 70% / 1);
 }
 
 .hover\:decoration-yellow\/100:hover {
   text-decoration-color: hsl(51 100% 49% / 1);
+}
+
+.group:hover .group-hover\:fill-white {
+  fill: hsl(0, 0%, 100%);
 }
 
 @media (max-width: 320px) {
@@ -1100,19 +1107,14 @@ html {
     grid-row-start: 1;
   }
 
-  .sm\:my-12 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .sm\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  .sm\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
   }
 
   .sm\:mt-\[6\%\] {
@@ -1137,10 +1139,6 @@ html {
 
   .sm\:justify-center {
     justify-content: center;
-  }
-
-  .sm\:gap-7 {
-    gap: 1.75rem;
   }
 
   .sm\:gap-6 {
@@ -1184,10 +1182,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
   .md\:gap-\[4rem\] {
     gap: 4rem;
   }
@@ -1195,6 +1189,11 @@ html {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .md\:py-6 {
@@ -1205,16 +1204,6 @@ html {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 
   .md\:text-5xl {
@@ -1237,17 +1226,12 @@ html {
     margin-bottom: 3.5rem;
   }
 
-  .lg\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:mb-16 {
     margin-bottom: 4rem;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .lg\:inline-flex {
@@ -1286,36 +1270,17 @@ html {
     padding-bottom: 2.25rem;
   }
 
-  .lg\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
-  .lg\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-  }
-
-  .lg\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .lg\:py-\[8\.5rem\] {
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
   }
 
-  .lg\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .lg\:pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
   .lg\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .lg\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .lg\:text-4xl {
@@ -1325,11 +1290,6 @@ html {
 
   .lg\:text-\[1\.125em\] {
     font-size: 1.125em;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .lg\:text-lg {
@@ -1364,18 +1324,6 @@ html {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .\32xl\:gap-20 {
-    gap: 5rem;
-  }
-
-  .\32xl\:gap-24 {
-    gap: 6rem;
-  }
-
   .\32xl\:gap-36 {
     gap: 9rem;
   }
@@ -1383,10 +1331,6 @@ html {
   .\32xl\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
-  }
-
-  .\32xl\:text-\[1\.075rem\] {
-    font-size: 1.075rem;
   }
 
   .\32xl\:text-\[2\.5rem\] {
